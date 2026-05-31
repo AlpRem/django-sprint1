@@ -47,7 +47,6 @@ posts = [
 posts_find_id = {post['id']: post for post in posts}
 
 
-# Create your views here.
 def index(request):
     template = 'blog/index.html'
     context = {'posts': list(reversed(posts))}
